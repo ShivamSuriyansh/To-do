@@ -1,0 +1,46 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+.input-task{
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+}
+
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+  right: 10em;
+  text-align: center;
+}
+
+
+.plus-circle{
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); 
+}
+
+.task-container{
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 0;
+}
+
+
+.main-container{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
