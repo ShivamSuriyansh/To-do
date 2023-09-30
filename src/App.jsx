@@ -89,7 +89,7 @@ function App() {
             return (
               <div key = {index} className='task-container border-2 p-2 rounded-lg overflow-auto max-h-screen mb-2 flex justify-around'>
                 <input type="checkbox"  className="focus:outline-none w-4 h-4 text-indigo-600 bg-gray-100 border-gray-300 rounded-full focus:ring-indigo-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked={isChecked[index]} onChange={()=>handleCheckBox(index)}></input>
-                <input  className={`focus:outline-none ${lineThrough} ${highLight} italic font-medium verflow-visible lg:w-48 dark:text-slate-100 dark:bg-slate-600 w-22`} disabled={!isChecked[index] || !isDisAble[index]} value={task}  />
+                <input  className={`focus:outline-none ${lineThrough} ${highLight} italic font-medium verflow-visible lg:w-48 dark:text-slate-100 dark:bg-slate-600 w-22`} disabled={isDisAble[index]} value={task}  />
                 <ArrowFatLinesUp className='cursor-pointer dark:text-white' size={28} onClick={(event)=>handleUpdate(index,event)} />
                 <Trash size={28} className='cursor-pointer dark:text-white' onClick={(e)=>handleDelete(index,e)}/>
               </div>
